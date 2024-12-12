@@ -1,9 +1,8 @@
 import { BlogCard } from "@/components/blog-card";
-import { allBlogs } from "contentlayer/generated";
-import { Metadata } from "next";
-import { generatePageMetadata } from "../seo";
-import Link from "next/link";
 import { ENV } from "@/lib/env";
+import { allBlogs } from "contentlayer/generated";
+import Link from "next/link";
+import { generatePageMetadata } from "../seo";
 
 export const metadata = generatePageMetadata({
   title: "Blog",
