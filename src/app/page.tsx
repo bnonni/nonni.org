@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { SOCIALS } from "../data/socials";
+import { LINKS } from "@/lib/constants";
 import { SocialLink } from "@/components/social-link";
 import React from "react";
-import { LINKS } from "@/lib/constants";
 import Link from "next/link";
 // import { allBlogs } from "contentlayer/generated";
 // import { BlogCard } from "@/components/blog-card";
@@ -46,7 +46,7 @@ export default function Home() {
           </p>
           <p className="my-4">
             I have a strong passion for the intersection of fintech and
-            decentralization. My career north start is to build solutions that
+            decentralization. My career north star is to build solutions that
             maximize human freedom, individual rights and sovereignty to allow
             people the choice to take control and ownership of the most
             important parts of their lives online: money, identity and data.
@@ -82,6 +82,9 @@ export default function Home() {
           <a href={LINKS.RESUME.VIEW} target="_blank" rel="noopener noreferrer">
             Click here to see my resume
           </a>
+        </p>
+        <br />
+        <p className="mt-4 inline-block cursor-pointer border-b">
           <a
             href={LINKS.RESUME.DOWNLOAD}
             target="_blank"
@@ -91,9 +94,7 @@ export default function Home() {
           </a>
         </p>
       </section>
-
       <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" />
-
       {/* <div>
         <h2 className="mb-6 text-2xl font-bold">Latest posts</h2>
         <ul>
