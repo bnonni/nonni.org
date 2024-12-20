@@ -80,7 +80,7 @@ export default function Home() {
         </div>
         <p className="mt-4 inline-block cursor-pointer border-b">
           <a href={LINKS.RESUME.VIEW} target="_blank" rel="noopener noreferrer">
-            Click here to see my resume
+            View my resume
           </a>
         </p>
         <br />
@@ -90,7 +90,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Click here to download a copy of resume
+            Download my resume
           </a>
         </p>
       </section>
