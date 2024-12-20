@@ -6,7 +6,7 @@ import { generatePageMetadata } from "../seo";
 export const metadata = generatePageMetadata({
   title: "Projects",
   description:
-    "View some of my notable open source web apps, npm packages, cli tools and more.",
+    "View my open source projects, mobile and web apps, npm packages, cli tools and more.",
 });
 
 export default function Projects() {
@@ -16,7 +16,7 @@ export default function Projects() {
         <h1 className="mb-4 text-2xl font-bold tracking-tighter">Projects</h1>
         <div
           role="list"
-          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 "
+          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2"
         >
           {PROJECTS.map((project, idx) => (
             <ProjectCard project={project} key={idx} />
