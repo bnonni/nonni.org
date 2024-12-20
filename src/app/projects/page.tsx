@@ -6,7 +6,7 @@ import { generatePageMetadata } from "../seo";
 export const metadata = generatePageMetadata({
   title: "Projects",
   description:
-    "View my open source projects, mobile and web apps, npm packages, cli tools and more.",
+    "View some of my notable open source web apps, npm packages, cli tools and more.",
 });
 
 export default function Projects() {

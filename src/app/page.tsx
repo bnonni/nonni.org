@@ -24,59 +24,46 @@ export default function Home() {
           width={250}
           height={250}
           alt="avatar"
-          className="mb-5 cursor-pointer hover:grayscale"
+          className="cursor-pointer hover:grayscale mb-5"
           priority
         />
         <h1 className="text-2xl font-bold">Bryan Nonni</h1>
 
         <div className="text-gray-700 dark:text-gray-300">
           <p className="mt-4">
-            I&apos;m a full stack software engineer specializing in building
-            intuitive web and mobile frontends, scalable and well desinged API
-            backends and seamless integrations.
+            I&apos;m a full stack software engineer specializing in building 
+            intuitive web and mobile frontends, scalable and well desinged 
+            API backends and seamless integrations. I have a strong 
+            passion for fintech, decentralized identity and Web5. I&apos;m an 
+            open source contributor currently focused on the
+            <a href="https://areweweb5yet.com/" className="border-b inline-block" rel="noopener noreferrer"> Web5 community.</a>
           </p>
           <p className="my-4">
             Over the years, I&apos;ve worked for startups and large corporations
-            building proof-of-concepts, internal tooling, user-facing web and
-            mobile apps and full stack applications. My work has spanned across
-            many different verticals including: digital marketing, retail,
-            restaurant, banking, payments, money services and mortgage lending.
-            I actively contribute to various open source projects and am a big
-            supporter of and believer in Free and Open Source Software (FOSS).
+            building full stack applications, proof-of-concepts, internal tooling,
+            and user-facing web + mobile apps across different verticals including: payments, mortgage
+            lending, retail, restaurant, banking, money services and digital marketing.
+            I actively contribute to various open source projects.
           </p>
           <p className="my-4">
-            I have a strong passion for the intersection of fintech and
-            decentralization. My career north start is to build solutions that
-            maximize human freedom, individual rights and sovereignty to allow
-            people the choice to take control and ownership of the most
-            important parts of their lives online: money, identity and data.
+          My main goal for my life and career is to build solutions that maximize human 
+          freedom and individual rights and sovereignty, allow people the ability to take
+          back the control over their online lives: money, identity and data.
           </p>
           <p className="my-4">
             If you&apos;d like to see more about my projects, please&nbsp;
-            <Link href={"/projects"} className="inline-block border-b">
-              visit my projects page
+            <Link href={"/projects"} className="border-b inline-block">
+                 visit my projects page
             </Link>
           </p>
           <p className="mb-4">
             If you&apos;d like to collaborate, please&nbsp;
-            <a
-              href="mailto:bryan@nonni.work"
-              className="inline-block border-b"
-              rel="noopener noreferrer"
-            >
+            <a href="mailto:bryan@nonni.work" className="border-b inline-block" rel="noopener noreferrer">
               send me an email
-            </a>
-            or
-            <a
-              href={SOCIALS[1].href}
-              className="inline-block border-b"
-              rel="noopener noreferrer"
-            >
-              say hello on X
             </a>
           </p>
         </div>
-        <div className="mb-2 mt-4 flex space-x-4">
+        <div className="flex space-x-4 mb-2 mt-4">
           {SOCIALS.map((social) => (
             <SocialLink
               key={social.label}
@@ -86,16 +73,9 @@ export default function Home() {
             />
           ))}
         </div>
-        <p className="mt-4 inline-block cursor-pointer border-b">
-          <a href={LINKS.RESUME.VIEW} target="_blank" rel="noopener noreferrer">
-            Click here to see my resume
-          </a>
-          <a
-            href={LINKS.RESUME.DOWNLOAD}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click here to download a copy of resume
+        <p className="mt-4 border-b inline-block cursor-pointer">
+          <a href={LINKS.RESUME} target="_blank" rel="noopener noreferrer">
+            View Resume
           </a>
         </p>
       </section>
