@@ -3,18 +3,17 @@ import { SOCIALS } from "../data/socials";
 import { SocialLink } from "@/components/social-link";
 import React from "react";
 import { LINKS } from "@/lib/constants";
+import { allPages } from "contentlayer/generated";
+import { BlogCard } from "@/components/blog-card";
 import Link from "next/link";
-// import { allBlogs } from "contentlayer/generated";
-// import { BlogCard } from "@/components/blog-card";
-// import Link from "next/link";
 
 export default function Home() {
-  // const blogs = allBlogs.slice(0, 2).sort((a, b) => {
-  //   if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
-  //     return -1;
-  //   }
-  //   return 1;
-  // });
+  const blogs = allPages.slice(0, 2).sort((a, b) => {
+    if (new Date(a.publishedAt) > new Date(b.publishedAt)) {
+      return -1;
+    }
+    return 1;
+  });
 
   return (
     <React.Fragment>
@@ -102,7 +101,7 @@ export default function Home() {
 
       <div className="my-8 w-full border-t border-gray-200 dark:border-gray-800" />
 
-      {/* <div>
+      <div>
         <h2 className="mb-6 text-2xl font-bold">Latest posts</h2>
         <ul>
           {blogs.map((blog) => (
@@ -113,7 +112,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-      </div> */}
+      </div>
     </React.Fragment>
   );
 }
