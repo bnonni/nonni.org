@@ -8,7 +8,7 @@ type BlogCardProps = Pick<
 
 export function BlogCard({ blog }: { blog: BlogCardProps }) {
   return (
-    <article className="space-y-2 cursor-pointer transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50 p-4 rounded-lg">
+    <article className="cursor-pointer space-y-2 rounded-lg p-4 transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50">
       <dl>
         <dt className="sr-only">Published on</dt>
         <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">

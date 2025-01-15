@@ -1,8 +1,4 @@
-import {
-  GitHubIcon,
-  LinkedInIcon,
-  XIcon
-} from "../components/icons";
+import { GitHubIcon, LinkedInIcon, XIcon } from "../components/icons";
 
 export const SOCIALS = [
   {
@@ -19,5 +15,5 @@ export const SOCIALS = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/bnonni",
     icon: LinkedInIcon,
-  }
+  },
 ];

@@ -1,11 +1,10 @@
-import type { GetStaticPaths, Metadata } from "next";
-import { notFound } from "next/navigation";
-import { allBlogs } from "contentlayer/generated";
-import Balancer from "react-wrap-balancer";
-import { Mdx } from "@/components/mdx";
-import { siteMetadata } from "@/data/siteMetadata";
 import NotFound from "@/app/not-found";
+import { Mdx } from "@/components/mdx";
+import { meta } from "@/data/site-metadata";
 import { formatDate } from "@/lib/utils";
+import { allBlogs } from "contentlayer/generated";
+import type { Metadata } from "next";
+import Balancer from "react-wrap-balancer";
 
 export async function generateStaticParams() {
   const paths = allBlogs.map((blog) => ({ slug: blog.slug }));
@@ -23,7 +22,7 @@ export async function generateMetadata({
     return;
   }
 
-  const ogImage = `${siteMetadata.siteUrl}/og?title=${blog.title}`;
+  const ogImage = `${meta.siteUrl}/og?title=${blog.title}`;
 
   return {
     title: blog.title,
@@ -31,12 +30,12 @@ export async function generateMetadata({
     openGraph: {
       title: blog.title,
       description: blog.summary,
-      siteName: siteMetadata.title,
+      siteName: meta.title,
       locale: "en_US",
       type: "article",
       publishedTime: blog.publishedAt,
       url: "./",
-      authors: siteMetadata.author,
+      authors: meta.author,
       images: [
         {
           url: ogImage,

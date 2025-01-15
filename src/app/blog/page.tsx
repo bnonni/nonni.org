@@ -1,9 +1,8 @@
 import { BlogCard } from "@/components/blog-card";
-import { allBlogs } from "contentlayer/generated";
-import { Metadata } from "next";
-import { generatePageMetadata } from "../seo";
-import Link from "next/link";
 import { ENV } from "@/lib/env";
+import { allBlogs } from "contentlayer/generated";
+import Link from "next/link";
+import { generatePageMetadata } from "../seo";
 
 export const metadata = generatePageMetadata({
   title: "Blog",
@@ -28,7 +27,7 @@ export default function Blog() {
         {undraftedBlogs.map((blog) => (
           <li
             key={blog.slug}
-            className="py-1 divide-y divide-gray-200 dark:divide-gray-700"
+            className="divide-y divide-gray-200 py-1 dark:divide-gray-700"
           >
             <Link href={`/blog/${blog.slug}`}>
               <BlogCard blog={blog} />

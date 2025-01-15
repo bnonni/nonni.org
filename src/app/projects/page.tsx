@@ -1,7 +1,7 @@
+import { generatePageMetadata } from "@/app/seo";
+import { ProjectCard } from "@/components/project-card";
 import { PROJECTS } from "@/data/projects";
 import React from "react";
-import { ProjectCard } from "../../components/project-card";
-import { generatePageMetadata } from "../seo";
 
 export const metadata = generatePageMetadata({
   title: "Projects",

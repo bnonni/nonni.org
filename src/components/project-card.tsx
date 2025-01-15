@@ -35,10 +35,10 @@ export const ProjectCard = ({ project }: ProjectProps) => {
           <a className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
             {title}
           </a>
-          <div className=" z-10 mt-2 text-sm text-gray-500 dark:text-gray-400">
+          <div className="z-10 mt-2 text-sm text-gray-500 dark:text-gray-400">
             {description}
           </div>
-          <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1 ">
+          <div className="z-10 mb-6 mt-6 flex flex-wrap gap-1">
             {tags.map((tag) => (
               <p
                 className="hover:text-primary dark:hover:text-primary inline-flex items-center rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs leading-4 text-zinc-600 dark:bg-zinc-800 dark:text-zinc-200"

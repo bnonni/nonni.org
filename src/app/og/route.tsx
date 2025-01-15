@@ -1,4 +1,4 @@
-import { siteMetadata } from "@/data/siteMetadata";
+import { meta } from "@/data/site-metadata";
 import { ImageResponse, NextRequest } from "next/server";
 
 export const runtime = "edge";
@@ -30,7 +30,7 @@ export async function GET(req: NextRequest) {
             alignItems: "flex-start",
             justifyContent: "center",
             color: "white",
-            backgroundImage: `url(${siteMetadata.siteUrl}/_static/blog-og-card.png)`,
+            backgroundImage: `url(${meta.siteUrl}/_static/blog-og-card.png)`,
           }}
         >
           <div

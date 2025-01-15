@@ -1,15 +1,15 @@
-import "./global.css";
-import type { Metadata } from "next";
-import { cn } from "@/lib/utils";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
-import { Space_Grotesk } from "next/font/google";
-import { siteMetadata } from "@/data/siteMetadata";
-import Head from "./head";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { ThemeProvider } from "@/components/theme-provider";
+import { meta } from "@/data/site-metadata";
 import { ENV } from "@/lib/env";
+import { cn } from "@/lib/utils";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import type { Metadata } from "next";
+import { Space_Grotesk } from "next/font/google";
+import "./global.css";
+import Head from "./head";
 
 const space_grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -17,19 +17,19 @@ const space_grotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL(siteMetadata.siteUrl),
+export const data: Metadata = {
+  metadataBase: new URL(meta.siteUrl),
   title: {
-    default: siteMetadata.title,
-    template: `%s | ${siteMetadata.title}`,
+    default: meta.title,
+    template: `%s | ${meta.title}`,
   },
-  description: siteMetadata.description,
+  description: meta.description,
   openGraph: {
-    title: siteMetadata.title,
-    description: siteMetadata.description,
+    title: meta.title,
+    description: meta.description,
     url: "./",
-    siteName: siteMetadata.title,
-    images: [siteMetadata.socialBanner],
+    siteName: meta.title,
+    images: [meta.socialBanner],
     locale: "en_US",
     type: "website",
   },
@@ -45,9 +45,9 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: siteMetadata.title,
+    title: meta.title,
     card: "summary_large_image",
-    images: [siteMetadata.socialBanner],
+    images: [meta.socialBanner],
   },
 };
 
@@ -67,7 +67,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark" // default to dark mode, can be light, dark, system
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
