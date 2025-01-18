@@ -16,6 +16,9 @@ const navItems = {
   "/projects": {
     name: "projects",
   },
+  "/patents": {
+    name: "patents",
+  },
 };
 
 export function Header() {

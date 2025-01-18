@@ -1,4 +1,4 @@
-import { GitHubIcon } from "@/components/icons";
+import { LinkIcon } from "@/components/icons";
 import { SocialLink } from "@/components/social-link";
 import Image from "next/image";
 
@@ -15,10 +15,10 @@ type ProjectProps = {
   project: Project;
 };
 
-export const ProjectCard = ({ project }: ProjectProps) => {
+export const PatentCard = ({ project }: ProjectProps) => {
   const { title, repo, thumbnail, website, description, tags } = project ?? {};
   return (
-    <a href={website} target="_blank" rel="noopener noreferrer">
+    <a href={website} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white">
       <div
         className="flex cursor-pointer flex-col rounded-xl transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50"
         key={title}
@@ -54,7 +54,7 @@ export const ProjectCard = ({ project }: ProjectProps) => {
           </div>
           <div className="flex items-center">
             <SocialLink
-              icon={GitHubIcon}
+              icon={LinkIcon}
               href={repo}
               className="h-6 w-6 flex-none"
             />
