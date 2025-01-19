@@ -70,6 +70,14 @@ const Applications = [
     website: '/_static/patent/applications/System-and-Method-for-Providing-a-Decentralized-Exchange-for-Credit-Lending-US-20240242215.pdf',
     description: '',
     tags: ['']
+  },
+  {
+    title: 'Decentralized Network Services for Centralized Network Services',
+    repo: '/_static/patent/applications/Decentralized-Network-Services-for-Centralized-Network-Services-US-20230342757.pdf',
+    thumbnail: '',
+    website: '/_static/patent/applications/Decentralized-Network-Services-for-Centralized-Network-Services-US-20230342757.pdf',
+    description: '',
+    tags: ['']
   }
 ] as const;
 
