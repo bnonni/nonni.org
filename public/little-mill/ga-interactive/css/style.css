@@ -14,7 +14,7 @@ body {
 }
 
 div.georgia {
-    background: url(/public/little-mill/ga-interactive/icons/georgia-clipart.gif);
+    background: url(../icons/georgia-clipart.gif);
     background-repeat: no-repeat;
     background-size: 800px;
     text-align: center;
@@ -101,7 +101,7 @@ div#tg-icon {
 
 div#tallulah-gorge {
     background-color: #D1CCC4;
-    background-image: url(/public/little-mill/ga-interactive/images/tallulah_gorge.jpg);
+    background-image: url(../images/tallulah_gorge.jpg);
     bottom: 1em;
     left: 5em;
 }
@@ -137,7 +137,7 @@ div#cnf-icon {
 
 div#chat-nat-forest {
     background-color: #AE9061;
-    background-image: url(/public/little-mill/ga-interactive/images/chattahoochee_forest.jpg);
+    background-image: url(../images/chattahoochee_forest.jpg);
     left: 5em;
 }
 
@@ -172,7 +172,7 @@ div#rtm-icon {
 
 div#red-top-mtn {
     background-color: #FF0300;
-    background-image: url(/public/little-mill/ga-interactive/images/red_top_mountain.jpg);
+    background-image: url(../images/red_top_mountain.jpg);
 }
 
 
@@ -207,7 +207,7 @@ div#ll-icon {
 
 div#lake-lanier {
     background-color: #69D2E7;
-    background-image: url(/public/little-mill/ga-interactive/images/lake_lanier.jpg);
+    background-image: url(../images/lake_lanier.jpg);
     background-size: 100% 100%;
 }
 
@@ -242,7 +242,7 @@ div#atl-icon {
 
 div#atlanta {
     background-color: #C9253F;
-    background-image: url(/public/little-mill/ga-interactive/images/atlanta.jpg);
+    background-image: url(../images/atlanta.jpg);
 }
 
 
@@ -276,7 +276,7 @@ div#aug-icon {
 
 div#augusta {
     background-color: #FBE203;
-    background-image: url(/public/little-mill/ga-interactive/images/augusta.jpeg);
+    background-image: url(../images/augusta.jpeg);
     bottom: 19em;
     left: 5em;
 }
@@ -312,7 +312,7 @@ div#ws-icon {
 
 div#warm-springs {
     background-color: #B1EBF2;
-    background-image: url(/public/little-mill/ga-interactive/images/warm_springs.jpg);
+    background-image: url(../images/warm_springs.jpg);
     left: 4em;
     bottom: 25em;
 }
@@ -348,7 +348,7 @@ div#ma-icon {
 
 div#macon {
     background-color: #003556;
-    background-image: url(/public/little-mill/ga-interactive/images/macon.jpg);
+    background-image: url(../images/macon.jpg);
     left: 3em;
     bottom: 23em;
 }
@@ -384,7 +384,7 @@ div#cr-icon {
 
 div#chat-river {
     background-color: #94D65B;
-    background-image: url(/public/little-mill/ga-interactive/images/chattahoochee_river.jpg);
+    background-image: url(../images/chattahoochee_river.jpg);
     left: 4em;
     bottom: 25em;
 }
@@ -420,7 +420,7 @@ div#sav-icon {
 
 div#savannah {
     background-color: #DB0031;
-    background-image: url(/public/little-mill/ga-interactive/images/savannah.jpg);
+    background-image: url(../images/savannah.jpg);
     bottom: 23em;
     right: 34em;
 }
@@ -456,7 +456,7 @@ div#pc-icon {
 
 div#prov-canyon {
     background-color: #FF6242;
-    background-image: url(/public/little-mill/ga-interactive/images/providence_canyon.jpg);
+    background-image: url(../images/providence_canyon.jpg);
     left: 5em;
     bottom: 23em;
 }
@@ -492,7 +492,7 @@ div#rs-icon {
 
 div#rad-springs {
     background-color: #573100;
-    background-image: url(/public/little-mill/ga-interactive/images/radium_springs.jpg);
+    background-image: url(../images/radium_springs.jpg);
     bottom: 23em;
     left: 4em;
 }
@@ -527,7 +527,7 @@ div#os-icon {
 
 div#oke-swamp {
     background-color: #C5D122;
-    background-image: url(/public/little-mill/ga-interactive/images/okefenokee_swamp.jpg);
+    background-image: url(../images/okefenokee_swamp.jpg);
     bottom: 29em;
     left: 5em
 }
