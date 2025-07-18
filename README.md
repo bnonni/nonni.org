@@ -12,8 +12,8 @@ This is my personal website and blog built using:
 This application requires Node.js v16.13+.
 
 ```bash
-git clone https://github.com/bnonni/nonni.dev
-cd nonni.dev
+git clone https://github.com/bnonni/nonni.org
+cd nonni.org
 pnpm install
 pnpm dev
 ```
@@ -26,18 +26,8 @@ If you want to use this project code as your own portfolio , you can go ahead. P
 
 ## Author
 
-- Website: [nonni.dev](https://nonni.dev)
-- X: [@n0nstr](https://x.com/n0nstr)
-- Github: [@bnonni](https://github.com/bnonni)
-- LinkedIn: [@bnonni](https://linkedin.com/in/bnonni)
-
-Give a ⭐️ if you like the project!
+- Website: [nonni.org](https://nonni.org)
 
 ## License
 
-Copyright © 2024 [Bryan Nonni](https://github.com/bnonni).
-
-<br />
-
-This project is [MIT](https://github.com/bnonni/nonni.dev/blob/master/LICENSE) licensed.
-This project is a fork of [@adarshaacharya/adarsha.dev](https://github.com/adarshaacharya/adarsha.dev).
+This repo is an [Unlicensed](https://github.com/bnonni/nonni.dev/blob/master/LICENSE) fork of [@adarshaacharya/adarsha.dev](https://github.com/adarshaacharya/adarsha.dev).
