@@ -18,7 +18,12 @@ type ProjectProps = {
 export const PatentCard = ({ project }: ProjectProps) => {
   const { title, repo, thumbnail, website, description, tags } = project ?? {};
   return (
-    <a href={website} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white">
+    <a
+      href={website}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="rounded-xl border border-white"
+    >
       <div
         className="flex cursor-pointer flex-col rounded-xl transition hover:bg-zinc-50 hover:dark:bg-zinc-800/50"
         key={title}

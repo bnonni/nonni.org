@@ -39,15 +39,13 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: pnpm run build
+        run: pnpm build
 
-      - name: Lint  
-        run: pnpm run lint
-      
+      - name: Lint
+        run: pnpm lint
+
       - name: Format
-        run: pnpm run format
+        run: pnpm format
 
       - name: Typecheck
-        run: pnpm run type-check
-
-
+        run: pnpm type-check

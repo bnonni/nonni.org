@@ -2,3 +2,4 @@ onlyBuiltDependencies:
   - contentlayer
   - esbuild
   - protobufjs
+  - unrs-resolver
