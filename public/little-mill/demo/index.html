@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Simple Web App Demos for Kids</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        canvas {
+            border: 1px solid #000;
+        }
+
+        .card {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background: #eee;
+            font-size: 30px;
+            text-align: center;
+            line-height: 80px;
+            cursor: pointer;
+        }
+
+        .hidden {
+            background: #444;
+            color: #444;
+        }
+
+        .sound-btn {
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>10 Simple Web App Demos for Kids</h1>
+
+    <section>
+        <h2>1. Drawing Pad</h2>
+        <canvas id="drawCanvas" width="300" height="300"></canvas>
+        <script>
+            const canvas = document.getElementById('drawCanvas');
+            const ctx = canvas.getContext('2d');
+            let drawing = false;
+            canvas.addEventListener('mousedown', () => drawing = true);
+            canvas.addEventListener('mouseup', () => drawing = false);
+            canvas.addEventListener('mousemove', e => {
+                if (!drawing) return;
+                const rect = canvas.getBoundingClientRect();
+                ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+                ctx.stroke();
+            });
+        </script>
+    </section>
+
+    <section>
+        <h2>2. Emoji Quiz</h2>
+        <p id="emojiQuestion">🍕+🏀=?</p>
+        <input id="emojiAnswer" placeholder="Your Answer" />
+        <button onclick="checkEmojiAnswer()">Check</button>
+        <p id="emojiFeedback"></p>
+        <script>
+            function checkEmojiAnswer() {
+                const ans = document.getElementById('emojiAnswer').value.toLowerCase();
+                const correct = 'pizzaball';
+                document.getElementById('emojiFeedback').textContent = ans === correct ? 'Correct!' : 'Try again!';
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>3. Random Story Prompt</h2>
+        <button onclick="generatePrompt()">New Prompt</button>
+        <p id="storyPrompt"></p>
+        <script>
+            const prompts = [
+                "A robot finds a magical hat...",
+                "A cat becomes the mayor...",
+                "Two best friends discover a portal..."
+            ];
+            function generatePrompt() {
+                const pick = prompts[Math.floor(Math.random() * prompts.length)];
+                document.getElementById('storyPrompt').textContent = pick;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>4. Flashlight App</h2>
+        <button onclick="toggleLight()">Toggle Light</button>
+        <script>
+            let lightOn = false;
+            function toggleLight() {
+                document.body.style.backgroundColor = lightOn ? 'white' : 'yellow';
+                lightOn = !lightOn;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>5. Dice Roller</h2>
+        <button onclick="rollDice()">Roll Dice</button>
+        <p id="diceResult"></p>
+        <script>
+            function rollDice() {
+                const result = Math.ceil(Math.random() * 6);
+                document.getElementById('diceResult').textContent = `🎲 You rolled: ${result}`;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>6. Sound Board</h2>
+        <button class="sound-btn"
+            onclick="new Audio('https://www.soundjay.com/button/beep-07.wav').play()">Beep</button>
+        <button class="sound-btn"
+            onclick="new Audio('https://www.soundjay.com/button/beep-10.wav').play()">Buzz</button>
+    </section>
+
+    <section>
+        <h2>7. Would You Rather</h2>
+        <button onclick="showQuestion()">New Question</button>
+        <p id="wyr"></p>
+        <script>
+            const questions = [
+                ["have a pet dragon", "be a wizard"],
+                ["eat ice cream forever", "never eat pizza again"],
+                ["live in space", "live under the sea"]
+            ];
+            function showQuestion() {
+                const q = questions[Math.floor(Math.random() * questions.length)];
+                document.getElementById('wyr').textContent = `Would you rather ${q[0]} or ${q[1]}?`;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>8. Mood Tracker</h2>
+        <select id="moodSelect">
+            <option>😊 Happy</option>
+            <option>😞 Sad</option>
+            <option>😡 Angry</option>
+        </select>
+        <button onclick="showMood()">Set Mood</button>
+        <p id="moodDisplay"></p>
+        <script>
+            function showMood() {
+                const mood = document.getElementById('moodSelect').value;
+                document.getElementById('moodDisplay').textContent = `You feel: ${mood}`;
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>9. Packing List</h2>
+        <input id="itemInput" placeholder="Add an item" />
+        <button onclick="addItem()">Add</button>
+        <ul id="packingList"></ul>
+        <script>
+            function addItem() {
+                const item = document.getElementById('itemInput').value;
+                const li = document.createElement('li');
+                li.textContent = item;
+                document.getElementById('packingList').appendChild(li);
+                document.getElementById('itemInput').value = '';
+            }
+        </script>
+    </section>
+
+    <section>
+        <h2>10. Daily Quote</h2>
+        <button onclick="newQuote()">Get Quote</button>
+        <p id="quote"></p>
+        <script>
+            const quotes = [
+                "You can do anything!",
+                "Stay curious.",
+                "Today is your day!"
+            ];
+            function newQuote() {
+                const q = quotes[Math.floor(Math.random() * quotes.length)];
+                document.getElementById('quote').textContent = q;
+            }
+        </script>
+    </section>
+
+</body>
+
+</html>

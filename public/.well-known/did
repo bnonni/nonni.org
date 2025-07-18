@@ -1,0 +1,14 @@
+{
+    "id": "did:web:nonni.org",
+    "service": [
+        {
+            "id": "did:web:nonni.org",
+            "type": "DecentralizedWebNode",
+            "serviceEndpoint": [
+                "https://dwn.nonni.org/"
+            ],
+            "enc": "#enc",
+            "sig": "#sig"
+        }
+    ]
+}
